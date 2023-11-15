@@ -9,16 +9,18 @@
 /* Begin PBXBuildFile section */
 		40EBB5672B0476480041B519 /* SnapchatDragTransitionSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBB5662B0476480041B519 /* SnapchatDragTransitionSwiftUIApp.swift */; };
 		40EBB5692B0476480041B519 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40EBB5682B0476480041B519 /* ContentView.swift */; };
-		40EBB56B2B0476490041B519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EBB56A2B0476490041B519 /* Assets.xcassets */; };
 		40EBB56E2B0476490041B519 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EBB56D2B0476490041B519 /* Preview Assets.xcassets */; };
+		40EBB5752B04775A0041B519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40EBB5742B04775A0041B519 /* Assets.xcassets */; };
+		40EBB5772B04776D0041B519 /* Sample Videos in Resources */ = {isa = PBXBuildFile; fileRef = 40EBB5762B04776D0041B519 /* Sample Videos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40EBB5632B0476480041B519 /* SnapchatDragTransitionSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatDragTransitionSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40EBB5662B0476480041B519 /* SnapchatDragTransitionSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapchatDragTransitionSwiftUIApp.swift; sourceTree = "<group>"; };
 		40EBB5682B0476480041B519 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		40EBB56A2B0476490041B519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40EBB56D2B0476490041B519 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		40EBB5742B04775A0041B519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40EBB5762B04776D0041B519 /* Sample Videos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Sample Videos"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 			children = (
 				40EBB5662B0476480041B519 /* SnapchatDragTransitionSwiftUIApp.swift */,
 				40EBB5682B0476480041B519 /* ContentView.swift */,
-				40EBB56A2B0476490041B519 /* Assets.xcassets */,
+				40EBB5742B04775A0041B519 /* Assets.xcassets */,
+				40EBB5762B04776D0041B519 /* Sample Videos */,
 				40EBB56C2B0476490041B519 /* Preview Content */,
 			);
 			path = SnapchatDragTransitionSwiftUI;
@@ -125,8 +128,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40EBB5752B04775A0041B519 /* Assets.xcassets in Resources */,
 				40EBB56E2B0476490041B519 /* Preview Assets.xcassets in Resources */,
-				40EBB56B2B0476490041B519 /* Assets.xcassets in Resources */,
+				40EBB5772B04776D0041B519 /* Sample Videos in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
