@@ -14,7 +14,7 @@ struct VideoFile: Identifiable {
     var thumbnail: UIImage?
     var player: AVPlayer
     var offset: CGSize = .zero
-    var playVideo: Bool = false
+    var isPlaying: Bool = false
 }
 
 var videoUrl1 = Bundle.main.url(forResource: "Reel1", withExtension: "mp4")!

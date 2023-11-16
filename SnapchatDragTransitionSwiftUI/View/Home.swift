@@ -41,17 +41,9 @@ struct Home: View {
         }
         .overlay {
             if let expendedID, isExpanded {
-                
                 // サムネをタップするとoverlayで表示される
                 VideoDetailView(videoFile: $videoFiles.index(expendedID),
                                 isExpanded: $isExpanded, animationID: namespace)
-                .transition(.asymmetric(insertion: .identity, removal: .offset(y: 5)))
-                .onTapGesture {
-                    withAnimation(.easeInOut(duration: 0.15)) {
-                        self.expendedID = nil
-                        isExpanded = false
-                    }
-                }
             }
         }
     }

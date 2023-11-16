@@ -36,6 +36,11 @@ struct CardView<Overlay: View>: View {
                     .resizable()
                     .scaledToFill()
                     .frame(width: size.width, height: size.height)
+                    .overlay(content: {
+                        if videoFile.isPlaying, isDetailView {
+                            CustomVideoPlayer(player: videoFile.player)
+                        }
+                    })
                     .clipShape(RoundedRectangle(cornerRadius: 10))
             } else {
                 Rectangle()
@@ -51,6 +56,20 @@ struct CardView<Overlay: View>: View {
             }
         }
         .matchedGeometryEffect(id: videoFile.id, in: animationID)
+        
+         // やや動きをつけたいので 1.1をかける （ないのがデフォルト）
+        .offset(x: videoFile.offset.width, y: videoFile.offset.height * 1.1)
+        .scaleEffect(scale)
+    }
+    
+    var scale: CGFloat {
+        
+        let minOffsetY = videoFile.offset.height
+        
+        let progress = 1 - (minOffsetY / screenSize.height)
+      
+        // scaleのminを 0.3に設定
+        return isExpanded ? progress < 0.3 ? 0.3 : progress : 1
     }
     
     @MainActor
