@@ -1,4 +1,4 @@
-# SnapchatDragTransition SwiftUI
+# SnapchatDragTransitionSwiftUI
 The Dismiss　of animation with dragging cells on shared lists like snapshot does.
 
 |Screen shot|
